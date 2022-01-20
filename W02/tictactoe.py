@@ -23,10 +23,6 @@ def main():
         print("It's a draw.")
     print("\nThank you for playing.")
 
-
-
-
-
 def print_board(board):
     print()
     print(f'{board[0]}|{board[1]}|{board[2]}')
@@ -62,8 +58,6 @@ def next_player(current):
 def move(player, board):
     square = int(input(f"{player}'s turn to choose a square (1-9): "))
     board[square - 1] = player
-
-
 
 if __name__ == "__main__":
     main()
